@@ -5,46 +5,63 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Sign Up</title>
+  <title>Document</title>
 </head>
 <body>
-
+  
 <div class="content">
-  <div class="image-selection"></div>
+  <div class="image-section">
+    <div class="banner">
+      <img src="./pictures/odin-lined.png" alt="Odin image">
+      ODIN
+    </div>
+  </div>
 
-  <div class="text-selection">
-    <p> is not a real online service! 
-      You know you need something like this in your life to help you realize your deepest dreams.
-      Sign up <em>now</em> to get started.
-    </p>
- 
-  <form action="" method="post" class="sign_up">
-    <fieldset>
-      <legend>Lets do this!<legend>
-        <label for="fname">FIRST NAME</label>
-        <input type="text" id="fname" name="firstname" required>
-
-        <label for="lname">LAST NAME</label>
-        <input type="text" id="lname" name="lastname" required>
-
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone_number">PHONE NUMBER</label>
-        <input type="tel" íd="phone_number" name="phone_number" required>
-
-        <label for="password">PASSWORD</label>
-        <input type="password" id="password" name="password" required>
-
-        <label for="password_confirm">CONFIRM PASSWORD</label>
-        <input type="password" id="password_confirm" name="password" required>
-
-        <input type="submit" value="Create Account">
-    </fieldset>
+  <div class="text-section">
+    <p>This is not a real online service! 
+      You know you need something like this in your life to help you realize your deepest dreams. 
+      Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>
+  <form>
+    <div class="inputs-section">
+      <h3>Let's do this!</h3>
+      <div class="inputs">
+        <div>
+          <div>
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name" />
+          </div>
+          <div>
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name" />
+          </div>
+        </div>
+          <div>
+           <div>
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" />
+          </div>
+            <div>
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" id="phone-number" name="phone-number" />
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="password">PASSWORD</label>
+            <input type="password" class="error" id="password" name="password" />
+            <p class="error-message">*Passwords do not match</p>
+        </div>
+        <div>
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input type="password" class="error" id="confirm-password" name="confirm-password" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" id="create-account">Create Account</button>
   </form>
-  <p> Already have an account? <a href="google.fi">Log in</a></p>
+  <p class="log-in">Already have an account? <a href="#">Log in</a></p>
 </div>
-</div>
-
 </body>
 </html>
