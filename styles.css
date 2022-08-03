@@ -20,10 +20,10 @@ body {
 
 /* Image Section */
 .image-section {
-  background-image: url(./pictures/splash.jpg);
-  background-position: center center;
+  background-image: url(./pictures/sun.png);
+  background-position: center;
   background-size: cover;
-  flex: 3;
+  flex: 4;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -122,9 +122,11 @@ a {
   display: block;
 }
 
+
 input.focus {
   border: 1px solid blue;
   box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+  background: yellow;
 }
 
 input.error {
@@ -141,24 +143,24 @@ input.error {
   margin-left: var(--left-space);
   margin-top: 32px;
   border: none;
-  background-color: #596D48;
+  background-color: #ddcb24;
   padding: 12px 48px;
   border-radius: 8px;
   box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   color: white;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 p.log-in {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-top: 32px;
 }
 
 .log-in a {
-  color: #596D48;
+  color: #ddcb24;
   font-weight: bold;
   text-decoration: none;
 }
